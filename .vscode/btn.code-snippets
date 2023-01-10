@@ -1,0 +1,13 @@
+{
+	//*
+  	"btn": {
+  	  "prefix": "btn",
+  	  "scope": "html,php",
+  	  "body": [
+  	    "<button class=\"btn btn_${1|default, secondary|}\">",
+  	    "    ",
+  	    "</button>"
+  	  ],
+  	  "description": "button"
+  	},
+}

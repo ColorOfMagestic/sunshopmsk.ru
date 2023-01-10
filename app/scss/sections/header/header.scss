@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+}
+
+@media(min-width: $md) {
+    .header {
+    }
+}
+@media(min-width: $xl) {
+    .header {
+    }
+}
+
+

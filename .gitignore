@@ -1,0 +1,19 @@
+.DS_Store
+.idea
+# .vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+Thumbs.db
+.editorconfig
+app/css
+app/js/main.min.js
+app/js/libraries.min.js
+# app/fonts/src
+app\scss\default\reset+.scss
+app\scss\default\mixins.scss
+dist
+node_modules/
+

@@ -1,0 +1,30 @@
+.footer {
+    position: relative;
+}
+
+.footer__contacts {
+}
+
+.footer__copyright {
+    .copyright {
+    }
+}
+
+@media (min-width: $md) {
+    .footer {
+    }
+
+    .footer__copyright {
+        .copyright {
+        }
+    }
+}
+@media (min-width: $xl) {
+    .footer {
+    }
+
+    .footer__copyright {
+        .copyright {
+        }
+    }
+}

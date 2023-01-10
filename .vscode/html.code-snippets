@@ -1,0 +1,79 @@
+{
+  	"icon": {
+  	  	"prefix": "icon",
+  	  	"scope": "html,php",
+  	  	"body": [
+  	  	  "<svg class=\"icon\"><use xlink:href=\"img/sprite.svg#$0\"></use></svg>"
+  	  	],
+  	  	"description": "icon"
+  	},
+  	//*
+  	"container": {
+  	  "prefix": "container",
+  	  "scope": "html,php",
+  	  "body": ["<div class=\"container\">", "  ", "</div>"],
+  	  "description": "container"
+  	},
+	//*
+  	"questions": {
+  	  "prefix": "questions",
+  	  "scope": "html,php",
+  	  "body": [
+  	    "<div class=\"questions\" ${1| ,data-questions=\"accordion\"|}>",
+  	    "    <div class=\"questions-item\">",
+  	    "        <div class=\"questions-item__header\">",
+  	    "            <div class=\"questions-item__title\"></div>",
+  	    "            <div class=\"questions-item__toggel _arrow\">",
+  	    "                <svg class=\"icon\"><use xlink:href=\"img/sprite.svg#arrow\"></use></svg>",
+  	    "            </div>",
+  	    "        </div>",
+  	    "        <div class=\"questions-item__body\"></div>",
+  	    "    </div>",
+  	    "</div>"
+  	  ],
+  	  "description": "questions"
+  	},
+  	"questions plus": {
+  	  "prefix": "questions plus",
+  	  "scope": "html,php",
+  	  "body": [
+  	    "<div class=\"questions\" ${1| ,data-questions=\"accordion\"|}>",
+  	    "    <div class=\"questions-item\">",
+  	    "        <div class=\"questions-item__header\">",
+  	    "            <div class=\"questions-item__title\"></div>",
+  	    "            <div class=\"questions-item__toggel _plus\"></div>",
+  	    "        </div>",
+  	    "        <div class=\"questions-item__body\"></div>",
+  	    "    </div>",
+  	    "</div>"
+  	  ],
+  	  "description": "questions plus"
+  	},
+	//*
+  	"social": {
+  	  "prefix": "social",
+  	  "scope": "html,php",
+  	  "body": [
+  	    "<div class=\"social\">",
+  	    "    <a href=\"#\" class=\"link social-link\"><svg class=\"icon\"><use xlink:href=\"img/sprite.svg#\"></use></svg></a>",
+  	    "</div>"
+  	  ],
+  	  "description": "social"
+  	},
+	//* 
+	"video": {
+		"prefix": "video",
+		"scope": "html,php",
+		"body": [
+		"<div class=\"video adaptive-box\">",
+		"    <div class=\"adaptive-box__wrapper\">",
+		"        <img class=\"video__preview lazy\" data-src=\"\" src=\"images/global/lazyload.png\" alt=\"\" loading=\"lazy\"/>",
+		"        <div class=\"video__frame\"></div>",
+		"    </div>",
+		"    <button class=\"video__btn btn\" data-video-src=\"\"></button>",
+		"    <span class=\"loader loader--center loader--size-lg\"></span>",
+		"</div>"
+		],
+		"description": "video box"
+	},
+}

@@ -1,0 +1,20 @@
+{
+	//*
+	"img": {
+  	  	"prefix": "img",
+  	  	"scope": "html,php",
+  	  	"body": [
+  	  	  	"<img src=\"img/\" alt=\"\"/>"
+  	  	],
+  	  	"description": "img"
+  	},
+	"img-lazy": {
+  	  	"prefix": "img-l",
+  	  	"scope": "html,php",
+  	  	"body": [
+  	  	  	"<img src=\"img/\" alt=\"\" loading=\"lazy\"/>"
+  	  	],
+  	  	"description": "img lazyload"
+  	},
+	//* 
+}
