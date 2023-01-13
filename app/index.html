@@ -1,27 +1,114 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            Page title
-        </title>
-        <link rel="stylesheet" href="css/style.min.css" />
-    </head>
+<html class="page" lang="ru">
 
-    <body class="page-body">
-        <header class="header"></header>
-        <main class="page">
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__copyright">
-                    <p class="copyright">© 2016 - 2022</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Sunshopmsk
+    </title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="page-body">
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="video-background">
+                <div class="video">
+                    <video preload="auto" loop="" muted="" autoplay>
+                        <source src="http://dl.dropboxusercontent.com/s/sbtk7f7te0625l6/Композиция%201.mp4?dl=0"
+                            type="video/mp4">
+                    </video>
                 </div>
             </div>
-        </footer>
+            <div class="header_info flex-cs abs">
+                <nav>
+                    <ul class="flex">
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile_menu">
+                    <button class="btn btn_close">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile_menu_wrapper">
+                        <ul class="flex flex-col">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="contacts flex-col">
+                            <p> г Москва, Новоясеневский проспект, 1 (ТЦ СПЕКТР, 2 этаж)
+                            </p>
+                            <div class="social flex">
+                                <a href="https://vk.com/sunshop_msk" class="link social-link"><svg class="icon">
+                                        <use xlink:href="img/sprite.svg#vk"></use>
+                                    </svg></a>
+                                <a href="https://t.me/sunshop_msk" class="link social-link"><svg class="icon">
+                                        <use xlink:href="img/sprite.svg#tg"></use>
+                                    </svg></a>
+                                <a href="https://api.whatsapp.com/send?phone=79680043334&" class="link social-link"><svg
+                                        class="icon">
+                                        <use xlink:href="img/sprite.svg#wa"></use>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
+                <div class="social">
+                    <a href="https://vk.com/sunshop_msk" class="link social-link"><svg class="icon">
+                            <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg></a>
+                    <a href="https://t.me/sunshop_msk" class="link social-link"><svg class="icon">
+                            <use xlink:href="img/sprite.svg#tg"></use>
+                        </svg></a>
+                    <a href="https://api.whatsapp.com/send?phone=79680043334&" class="link social-link"><svg
+                            class="icon">
+                            <use xlink:href="img/sprite.svg#wa"></use>
+                        </svg></a>
+                </div>
+                <button class="btn btn_burger">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="page">
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">
+                <p class="copyright">© 2016 - 2022</p>
+            </div>
+        </div>
+    </footer>
 
-        <!-- <section class="modal">
+    <!-- <section class="modal">
             <div class="modal__overlay flex-cc">
                 <div class="modal__wrapper flex-cc flex-col">
                     <button class="modal__close"></button>
@@ -34,7 +121,8 @@
                 </div>
             </div>
         </section> -->
-        <script type="module" src="js/libraries.min.js"></script>
-        <script type="module" src="js/main.min.js"></script>
-    </body>
+    <!-- <script type="module" src="js/libraries.min.js"></script> -->
+    <script type="module" src="js/main.min.js"></script>
+</body>
+
 </html>

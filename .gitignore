@@ -8,6 +8,7 @@
 *.sublime*
 Thumbs.db
 .editorconfig
+.vscode
 app/css
 app/js/main.min.js
 app/js/libraries.min.js
