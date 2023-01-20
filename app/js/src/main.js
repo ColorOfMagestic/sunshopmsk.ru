@@ -1,8 +1,11 @@
-// mobile menu
-const body  = document.querySelector('body');
-const burgerBtn = document.querySelector('.btn_burger'),
+const body  = document.querySelector('body'),
+    burgerBtn = document.querySelector('.btn_burger'),
     closeBtn = document.querySelector('.btn_close'),
-    mobileMenu = document.querySelector('.mobile_menu');
+    mobileMenu = document.querySelector('.mobile_menu'),
+    categoryListItems = document.querySelectorAll('.category_list_item'),
+    toTopBtn = document.querySelector('[data-role="toTop"]'),
+    indicator = document.querySelector('.indicator');
+// mobile menu
 
     const closeMenu = ()=> {
       mobileMenu.classList.remove('mobile_menu--active')
@@ -23,4 +26,38 @@ const burgerBtn = document.querySelector('.btn_burger'),
       return;
     })
 
-    closeBtn.addEventListener('click', closeMenu)
+    closeBtn.addEventListener('click', closeMenu);
+
+// active el category list
+
+categoryListItems.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        const parent = e.target.parentNode;
+
+        categoryListItems.forEach((item) => {
+            item.classList.remove('active');
+        });
+
+        parent.classList.add('active');
+    });
+});
+
+// scroll to top
+
+toTopBtn.addEventListener('click', ()=> {
+  scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+});
+
+// scrollbar 
+
+const scrollbar = function() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    indicator.style.width = scrolled + "%";
+
+}
+window.addEventListener('scroll', scrollbar);
