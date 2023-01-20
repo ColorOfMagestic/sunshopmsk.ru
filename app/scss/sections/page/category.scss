@@ -1,0 +1,52 @@
+.category {
+  position: relative;
+  padding-block: 1rem 1.5rem;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.category_list {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  font-weight: 600;
+  color: #000;
+  &_item {
+    margin-inline: 0.5rem;
+    margin-top: 0.5rem;
+
+    a {
+      cursor: pointer;
+    }
+
+  }
+
+  .active {
+    color: rgba(0, 0, 0, 0.7);
+
+  }
+}
+
+@media(min-width: $md) {
+  .category {
+    padding-block: 1rem 1.5rem;
+  }
+  
+  .category_list {
+    &_item {
+      margin-top: 0.5rem;
+    }
+  }
+  
+}
+@media(min-width: $lg) {
+  .category {
+    padding-block: 2.5rem 3rem;
+  }
+  
+  .category_list {
+    width: 50%;
+    margin-inline: auto;
+  }
+  
+}
+

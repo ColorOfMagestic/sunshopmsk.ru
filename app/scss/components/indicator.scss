@@ -1,0 +1,19 @@
+.indicator {
+  display: none;
+}
+
+@media(min-width: $lg) {
+  .indicator {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0%;
+    height: 4px;
+    background-color: #000;
+    transition: width .6s ease;
+  }
+  
+}
+

@@ -12,6 +12,7 @@
 </head>
 
 <body class="page-body">
+    <div class="indicator"></div>
     <header class="header">
         <div class="header_wrapper">
             <div class="video-background">
@@ -42,7 +43,7 @@
                             <use xlink:href="img/sprite.svg#close"></use>
                         </svg>
                     </button>
-                    <div class="mobile_menu_wrapper">
+                    <nav class="mobile_menu_wrapper">
                         <ul class="flex flex-col">
                             <li>
                                 <a href="#">Главная</a>
@@ -73,7 +74,7 @@
                                     </svg></a>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="logo">
                     <img src="img/logo.png" alt="Логотип">
@@ -99,44 +100,129 @@
         </div>
     </header>
     <main class="page">
+        <div class="category">
+            <div class="container">
+                    <ul class="category_list">
+                        <li class="category_list_item active">
+                            <a class="link" href="#">Все</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Большие размеры</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Платья</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Пиджаки</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Брюки</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Костюмы</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Блузки</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Топы</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Комбинезоны</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Свитера, кофты</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Шорты, юбки</a>
+                        </li>
+                        <li class="category_list_item">
+                            <a class="link" href="#">Аксессуары</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
         <!-- ========== Start About ========== -->
         <section class="about">
-          <div class="container">
-            <div class="about_wrapper">
-                <img src="img/about.jpeg" alt="">
-                <div class="about_content">
-                    <h1 class="title">SUNSHOP</h1>
-                    <p>Это магазин, в котором есть то, чего не хватает современным успешным женщинам - одежда, обладающая несколькими основными достоинствами: оригинальными акцентами, качеством исполнения, хорошей посадкой, выгодно подчеркивающей достоинства.</p>
-                        <p>С 2017 года мы радуем наших покупателей только лучшими моделями, обновляя ассортимент каждую неделю.</p>
-                        <p>Наша цель - помогать раскрывать в себе красоту. Мы хотим что бы каждая девушка знала, что она особенная.</p>
+            <div class="container">
+                <div class="about_wrapper">
+                    <img src="img/about.jpeg" alt="">
+                    <div class="about_content">
+                        <h1 class="title">SUNSHOP</h1>
+                        <p>Это магазин, в котором есть то, чего не хватает современным успешным женщинам - одежда,
+                            обладающая несколькими основными достоинствами: оригинальными акцентами, качеством
+                            исполнения, хорошей посадкой, выгодно подчеркивающей достоинства.</p>
+                        <p>С 2017 года мы радуем наших покупателей только лучшими моделями, обновляя ассортимент каждую
+                            неделю.</p>
+                        <p>Наша цель - помогать раскрывать в себе красоту. Мы хотим что бы каждая девушка знала, что она
+                            особенная.</p>
                         <p>Мы предлагаем женскую одежду, отвечающую всем требованиям наших покупателей:
-                            <ol>
-                                <li>
-                                    <p>Одежда только из качественных материалов</p>
-                                </li>
-                                <li>
-                                    <p>Соответсвует модным тенденциям</p>
-                                </li>
-                                <li>
-                                    <p>Удобство и комфорт каждый день</p>
-                                </li>
-                                <li>
-                                    <p>4. Идеально сидит по фигуре: от 42 до 54 размера</p>
-                                </li>
-                            </ol>
-                            </p>
+                        <ol>
+                            <li>
+                                <p>Одежда только из качественных материалов</p>
+                            </li>
+                            <li>
+                                <p>Соответсвует модным тенденциям</p>
+                            </li>
+                            <li>
+                                <p>Удобство и комфорт каждый день</p>
+                            </li>
+                            <li>
+                                <p>4. Идеально сидит по фигуре: от 42 до 54 размера</p>
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
                 </div>
+
             </div>
-        
-          </div>
         </section>
-        
         <!-- ========== End About ========== -->
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer__copyright">
-                <p class="copyright">© 2016 - 2022</p>
+            <div class="footer_wrapper">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Логотип">
+                    <a class="link dev" href="https://elstu.ru">Сайт разработан elstudio</a>
+                </div>
+                <div class="footer_content">
+                    <div class="footer_info flex-cs">
+                        <a href="https://yandex.ru/maps/org/sun_shop/12629086868/?display-text=Sun%20Shop&ll=37.573690%2C55.702744&mode=search&sll=37.622504%2C55.753215&sspn=1.311493%2C0.484827&text=Sun%20Shop&z=11">
+                            <img src="img/shop.png" alt="Местонахождение магазина">
+                        </a>
+                        <div class="address">
+                            <p> г Москва, Новоясеневский проспект, 1 (ТЦ СПЕКТР, 2 этаж)
+                                <a class="link" href="mailto:Sunshop-msk@yandex.ru">Sunshop-msk@yandex.ru</a>
+                                <a class="link" href="tel:79680043334">+7(968)004-33-34</a>
+                        </div>
+                    </div>
+                    <div class="footer_navigator">
+                        <nav class="footer_menu">
+                            <ul>
+                                <li>
+                                    <a class="link"  href="#" target="_blank">Доставка</a>
+                                </li>
+                                <li>
+                                    <a class="link"  href="https://t.me/sunshop_msk" target="_blank">Telegram</a>
+                                </li>
+                                <li>
+                                    <a class="link"  href="#" target="_blank">О нас </a>
+                                </li>
+                                <li>
+                                    <a class="link"  href="https://api.whatsapp.com/send?phone=79680043334&" target="_blank">WhatsApp</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="politic">Политика конфиденциальности</a>
+                        </nav>
+                        <button data-role="toTop" class="btn"></button>
+                    </div>
+                </div>
+                <div class="footer__mobile-link">
+                    <a href="#" class="politic link">Политика конфиденциальности</a>
+                    <a class="link dev" href="https://elstu.ru">Сайт разработан elstudio</a>
+                </div>
             </div>
         </div>
     </footer>
