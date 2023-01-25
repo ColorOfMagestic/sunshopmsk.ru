@@ -142,7 +142,7 @@
                     </ul>
             </div>
         </div>
-        <div class="search">
+        <!-- <div class="search">
             <div class="container">
                 <div class="search_mobile">
                     <div class="buttons_wrapper">
@@ -181,7 +181,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="content">
             <div class="container">
                 <div class="content-wrapper">
@@ -207,7 +207,23 @@
                         </a>
                         </div>
                         <div class="card">
-                            <span class="flex-cc badge">New</span>
+                            <button class="btn">
+                                <svg viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"  stroke-linejoin="round"></path></svg>
+                            </button>
+                            <a href="##" class="link">
+                            <div class="card_images">
+                                <img src="img/product/img_1.jpg" alt="">
+                                <img class="more" src="img/product/img_1_2.jpg" alt="">
+                            </div>
+                            <p class="title">Пиджак</p>
+                            <p class="price">
+                                6 700
+                                <span>/ шт</span>
+                            </p>
+                        </a>
+                        </div>
+                        <div class="card">
+                            <span class="flex-cc badge">sale</span>
                             <button class="btn">
                                 <svg viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"  stroke-linejoin="round"></path></svg>
                             </button>
@@ -241,24 +257,6 @@
                         </a>
                         </div>
                         <div class="card">
-                            <span class="flex-cc badge">New</span>
-                            <button class="btn">
-                                <svg viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"  stroke-linejoin="round"></path></svg>
-                            </button>
-                            <a href="##" class="link">
-                            <div class="card_images">
-                                <img src="img/product/img_1.jpg" alt="">
-                                <img class="more" src="img/product/img_1_2.jpg" alt="">
-                            </div>
-                            <p class="title">Пиджак</p>
-                            <p class="price">
-                                6 700
-                                <span>/ шт</span>
-                            </p>
-                        </a>
-                        </div>
-                        <div class="card">
-                            <span class="flex-cc badge">New</span>
                             <button class="btn">
                                 <svg viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"  stroke-linejoin="round"></path></svg>
                             </button>
@@ -363,7 +361,51 @@
         </div>
     </footer>
 
-    <button data-role="inFavorite"  class="btn in-favorite">
+    <div class="favorive_block">
+            <button class="btn btn_close">
+            </button>
+            <h2>Избранное:</h2>
+            <div class="favorive_block__cards">
+                <div class="card flex">
+                    <div class="card_img">
+                        <img class="" src="img/product/img_1.JPG" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_content_info">
+                            <a href="##" class="link">Пиджак</a>
+                            <p>Размер: 44 | RU 50</p>
+                            <p>Цвет: Camel</p>
+                            <p>10377</p>
+                        </div>
+                        <p class="price">6 700 p.</p>
+                    </div>
+                    <button class="btn">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="card flex">
+                    <div class="card_img">
+                        <img class="" src="img/product/img_1.JPG" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card_content_info">
+                            <a href="##" class="link">Пиджак</a>
+                            <p>Размер: 44 | RU 50</p>
+                            <p>Цвет: Camel</p>
+                            <p>10377</p>
+                        </div>
+                        <p class="price">6 700 p.</p>
+                    </div>
+                    <button class="btn">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+    </div>
+
+    <button data-role="inFavorite"  class="btn in-favorite in-favorite--active">
         <svg viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"  stroke-linejoin="round"></path></svg>
         <span class="flex-cc">1</span>
     </button>

@@ -6,30 +6,33 @@ const body = document.querySelector('body'),
     toTopBtn = document.querySelector('[data-role="toTop"]'),
     indicator = document.querySelector('.indicator'),
     favoriteBtns = document.querySelectorAll('.content .card button'),
-    inFavoriteBtn = document.querySelector('[data-role="inFavorite"]');
+    inFavoriteBtn = document.querySelector('[data-role="inFavorite"]'),
+    favorite = document.querySelector('.favorive_block'),
+    favoriteCloseBtn = document.querySelector('.favorive_block .btn_close');
 // mobile menu
 
-// console.log(inFavoriteBtn);
-
-const closeMenu = () => {
-    mobileMenu.classList.remove('mobile_menu--active');
+const closeMenu = (blok, cls) => {
+    blok.classList.remove(cls);
     body.classList.remove('body--hidden');
 };
 
-burgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('mobile_menu--active');
+const openMenu = (blok, cls) => {
+    blok.classList.add(cls);
     body.classList.add('body--hidden');
-});
+};
+
+burgerBtn.addEventListener('click', () => openMenu(mobileMenu,'mobile_menu--active')
+);
 
 document.addEventListener('click', (e) => {
     e.stopPropagation;
     if (e.target.classList.contains('page-body')) {
-        closeMenu();
+        closeMenu(mobileMenu,'mobile_menu--active');
     }
     return;
 });
 
-closeBtn.addEventListener('click', closeMenu);
+closeBtn.addEventListener('click',()=> closeMenu(mobileMenu,'mobile_menu--active'));
 
 // active el category list
 
@@ -70,15 +73,21 @@ window.addEventListener('scroll', scrollbar);
 // favorite buttons
 favoriteBtns.forEach((btn) => {
     btn.addEventListener('click', function (e) {
-        const parent = e.target.parentElement.parentElement;
-        if (!parent.classList.contains('btn')) {
-            return;
+        if(e.target.closest('.btn')) {
+            btn.classList.toggle('active');
         }
-        parent.classList.toggle('active');
     });
 });
 
-// zavivkakrd.ru/himzavivka-online/obuchenie-himicheskoj-zavivke-volos
-// zavivkakrd.ru/himzavivka-online/kursy-po-biozavivke-volos
-// zavivkakrd.ru/himzavivka-online/karving-volos-obuchenie
-// zavivkakrd.ru/himzavivka-online/prikornevoj-obyom-flisap-obuchenie
+// scroll favorite block
+
+inFavoriteBtn.addEventListener('click', ()=> {
+    openMenu(favorite,'active');
+});
+
+
+favoriteCloseBtn.addEventListener('click', ()=> {
+    closeMenu(favorite,'active');
+});
+
+
