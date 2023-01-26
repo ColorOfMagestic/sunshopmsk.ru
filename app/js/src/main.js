@@ -8,7 +8,13 @@ const body = document.querySelector('body'),
     favoriteBtns = document.querySelectorAll('.content .card button'),
     inFavoriteBtn = document.querySelector('[data-role="inFavorite"]'),
     favorite = document.querySelector('.favorive_block'),
-    favoriteCloseBtn = document.querySelector('.favorive_block .btn_close');
+    favoriteCloseBtn = document.querySelector('.favorive_block .btn_close'),
+    cart = document.querySelector('.modal_cart'),
+    cartClose = document.querySelector('.modal_cart .modal__close'),
+    inCartBtn = document.querySelector('[data-role="inCard"]'),
+    selfWrapper = document.querySelector('.self_wrapper'),
+    selfWrapperInput = document.querySelector('.self_wrapper input');
+
 // mobile menu
 
 const closeMenu = (blok, cls) => {
@@ -28,6 +34,9 @@ document.addEventListener('click', (e) => {
     e.stopPropagation;
     if (e.target.classList.contains('page-body')) {
         closeMenu(mobileMenu,'mobile_menu--active');
+    }
+    if (e.target.classList.contains('modal__overlay')) {
+        closeMenu(cart,'modal--active')
     }
     return;
 });
@@ -90,4 +99,11 @@ favoriteCloseBtn.addEventListener('click', ()=> {
     closeMenu(favorite,'active');
 });
 
+// cart 
 
+inCartBtn.addEventListener('click', ()=> openMenu(cart,'modal--active'));
+cartClose.addEventListener('click', ()=> closeMenu(cart,'modal--active'));
+
+selfWrapperInput.addEventListener('focusin', ()=>{
+    selfWrapper.classList.add('self');
+});

@@ -18,7 +18,7 @@ import ttf2woff  from "gulp-ttf2woff";
 
 let librariesPath = [
     "app/js/src/libraries/swiper/swiper-bundle.min.js",
-    // "app/js/src/libraries/imask/imask-bundle.js",
+    "app/js/src/libraries/imask/imask-bundle.js",
     // "app/js/src/libraries/fancybox/fancybox-bundle.js",
   ];
 
